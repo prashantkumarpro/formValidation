@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name validation </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+   
+</style>
+
+<body>
+    <div class="form-container">
+        <form action="#" onsubmit="return formValidate()" id="form" name="myForm">
+            First Name: <input type="text" name="name" id="name" autocomplete="" placeholder="">
+            <span id="error" style="color: #dd2626; visibility: hidden;">*Invalid</span> <span id="ferror"></span>
+            <br><br>
+            Last Name: <input type="text" name='lname' id="lname">
+            <span id="lerror"></span>
+            <br><br>
+            Phone Num: <input type="phone" name="phone">
+            <span id="perror"></span>
+            <br><br>
+
+            Email: <input type="text" name="email" id="">
+            <spant id="email-error"></spant>
+            <br><br>
+            Password: <input type="text" name="pass" id="pass">
+            <spant id="pass-error"></spant>
+            <br><br>
+            Confirm Password: <input type="text" name="cpass" id="cpass"><span id="cpass-error"></span>
+            <br><br>
+            Gender: <input type="radio" name="male" id="male">Male
+            <input type="radio" name="female" id="female"> Female
+            <input type="radio" name="other" id="other"> Other
+            <br><br>
+            <div class="btn">
+                <input type="submit" value="Submit">
+            </div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
